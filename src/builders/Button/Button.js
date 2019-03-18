@@ -1,21 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-export default function Control ({ id, label, control, Control })
+export default function Button ({ children, ...props })
 {
   return (
-    <section className='control'>
-      <label htmlFor={ id }>
-        { label }
-        <Control { ...control } id={ id } />
-      </label>
-    </section>
+    <input { ...props } type='button' value={ children } />
   )
 }
 
-Control.propTypes = {
-  id: PropTypes.string.isRequired,
-  label: PropTypes.string.isRequired,
-  control: PropTypes.object.isRequired,
-  Control: PropTypes.func.isRequired,
+Button.propTypes = {
+  children: PropTypes.string.isRequired,
 }

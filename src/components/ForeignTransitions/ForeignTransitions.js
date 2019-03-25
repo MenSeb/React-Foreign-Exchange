@@ -1,7 +1,6 @@
 import React, { useMemo } from 'react'
 import { Transition } from 'react-transition-group'
 import PropTypes from 'prop-types'
-import './styles.scss'
 
 export default function ForeignTransitions ({ components, transition, transitions })
 {

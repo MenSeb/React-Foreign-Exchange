@@ -1,0 +1,31 @@
+input[ type=text ]
+{
+  padding: $padding;
+  background-color: $colorBackground;
+
+  &,
+  &::placeholder
+  {
+    color: $colorBorder;
+  }
+
+  &:hover
+  {
+    &,
+    &::placeholder
+    {
+      color: $colorColor;
+    }
+  }
+
+  &:focus
+  {
+    outline: 0;
+
+    &,
+    &::placeholder
+    {
+      color: $colorHover;
+    }
+  }
+}

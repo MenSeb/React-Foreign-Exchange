@@ -1,0 +1,16 @@
+$colorBackground: #222222;
+$colorBorder: #045757;
+$colorColor: #a9c52f;
+$colorHover: #e0bb20;
+
+$animationDuration: 1.5s;
+$animationEasing: linear;
+$animation: $animationDuration $animationEasing infinite;
+
+$transitionDuration: .35s;
+$transitionEasing: ease-in-out;
+$transition: $transitionDuration $transitionEasing;
+
+$radius: 5px;
+$borderWidth: 2.5px;
+$padding: 10px;

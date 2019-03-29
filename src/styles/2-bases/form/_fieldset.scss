@@ -1,0 +1,8 @@
+fieldset
+{
+  @include size( 100%, null );
+
+  padding: $padding;
+  border: $border;
+  border-radius: $radius;
+}

@@ -4,6 +4,12 @@
   height: $h;
 }
 
+@mixin max-size ( $w, $h: $w )
+{
+  max-width: $w;
+  max-height: $h;
+}
+
 @mixin flex-parent (
   $d: null,
   $ai: null,

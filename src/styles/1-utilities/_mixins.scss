@@ -25,3 +25,15 @@
   align-content: $ac;
   flex-wrap: $w;
 }
+
+@mixin transition ( $props )
+{
+  @extend %transition;
+  transition-property: $props;
+}
+
+@mixin animation ( $names )
+{
+  @extend %animation;
+  animation-name: $names;
+}

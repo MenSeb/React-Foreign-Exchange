@@ -1,0 +1,5 @@
+svg
+{
+  @extend %full-size;
+  @include max-size( 100% );
+}

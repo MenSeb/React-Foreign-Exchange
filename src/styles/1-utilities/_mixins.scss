@@ -1,0 +1,21 @@
+@mixin size ( $w, $h: $w )
+{
+  width: $w;
+  height: $h;
+}
+
+@mixin flex-parent (
+  $d: null,
+  $ai: null,
+  $jc: null,
+  $ac: null,
+  $w: null,
+)
+{
+  display: flex;
+  flex-direction: $d;
+  align-items: $ai;
+  justify-content: $jc;
+  align-content: $ac;
+  flex-wrap: $w;
+}

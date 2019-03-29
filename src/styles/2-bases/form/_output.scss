@@ -1,0 +1,20 @@
+output
+{
+  @extend %flex-center;
+  @include size( 100%, null );
+  @include transition( color, border-color );
+
+  cursor: pointer;
+  font-size: .85em;
+
+  color: $colorColor;
+  padding: $padding;
+  border: $borderWidth dashed $colorColor;
+
+  &:hover,
+  &:active
+  {
+    color: $colorHover;
+    border-color: $colorHover;
+  }
+}

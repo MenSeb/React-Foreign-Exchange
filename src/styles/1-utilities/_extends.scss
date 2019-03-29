@@ -7,3 +7,13 @@
 {
   @include size( 100% );
 }
+
+%transition
+{
+  transition: $transition;
+}
+
+%animation
+{
+  animation: $animation;
+}

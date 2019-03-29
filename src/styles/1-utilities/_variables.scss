@@ -11,6 +11,9 @@ $transitionDuration: .35s;
 $transitionEasing: ease-in-out;
 $transition: $transitionDuration $transitionEasing;
 
-$radius: 5px;
 $borderWidth: 2.5px;
+$border: $borderWidth solid $colorBorder;
+
+$radius: 5px;
+
 $padding: 10px;

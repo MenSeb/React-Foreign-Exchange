@@ -1,0 +1,22 @@
+select
+{
+  @include size( 100%, null );
+
+  cursor: pointer;
+  font-size: 1rem;
+
+  padding: $padding;
+
+  color: $colorBorder;
+  background-color: $colorBackground;
+
+  &:hover
+  {
+    color: $colorColor;
+  }
+
+  &:focus
+  {
+    color: $colorHover;
+  }
+}

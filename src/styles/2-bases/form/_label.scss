@@ -1,0 +1,25 @@
+label
+{
+  @extend %flex-center;
+  @include size( 100%, null );
+  @include transition( color, border-color, background-color );
+
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 1px;
+
+  padding-left: $padding;
+
+  color: $colorColor;
+  background-color: $colorBackground;
+
+  border: $borderWidth solid $colorColor;
+  border-left: 0;
+  border-top-left-radius: $radius;
+  border-bottom-left-radius: $radius;
+
+  > *
+  {
+    margin-left: $padding;
+  }
+}

@@ -1,0 +1,46 @@
+.animation
+{
+  @extend %full-size;
+
+  position: absolute;
+  overflow: hidden;
+
+  *[ class*=animated ]
+  {
+    &,
+    &::before,
+    &::after
+    {
+      @extend %transition;
+      @include transition( all );
+      position: relative;
+    }
+  }
+
+  .animated-fall
+  {
+    @extend %animation;
+    @include animation( fall );
+  }
+
+  @each $state in $states
+  {
+    &-#{ $state }
+    {
+      $entered: $state == entered;
+
+      .animated-scale
+      {
+        transform: if( $entered, scale3d( 1, 1, 1 ), scale3d( 0, 0, 0 ) );
+      }
+
+      @each $side in $sides
+      {
+        .animated-#{ $side }
+        {
+          #{ $side }: if( $entered, 0, -100% );
+        }
+      }
+    }
+  }
+}

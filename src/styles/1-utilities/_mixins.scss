@@ -28,12 +28,10 @@
 
 @mixin transition ( $props )
 {
-  @extend %transition;
   transition-property: $props;
 }
 
 @mixin animation ( $names )
 {
-  @extend %animation;
   animation-name: $names;
 }

@@ -1,0 +1,33 @@
+.clipboard
+{
+  position: relative;
+  overflow: hidden;
+
+  &::before
+  {
+    @extend %full-size, %flex-center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+    background-color: $colorBackground;
+    animation-timing-function: ease-in-out;
+    animation: fadein .5s, fadeout .5s 1.5s;
+  }
+
+  &-valid
+  {
+    &::before
+    {
+      content: 'Copied to clipboard !';
+    }
+  }
+
+  &-error
+  {
+    &::before
+    {
+      content: 'Copy/Paste to clipboard not avaible...';
+    }
+  }
+}

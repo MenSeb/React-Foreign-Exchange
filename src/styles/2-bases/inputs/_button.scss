@@ -9,7 +9,7 @@ input[ type=button ]
   color: $colorColor;
   background-color: $colorBackground;
   padding: $padding $space;
-  border: $border;
+  border: $borderWidth solid $colorColor;
   border-radius: $space;
 
   &:hover

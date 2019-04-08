@@ -5,6 +5,7 @@ input
   &,
   &::placeholder
   {
+    @extend %transition;
     @include transition( color, border-color, background-color );
   }
 }

@@ -1,5 +1,7 @@
 input[ type=text ]
 {
+  @include size( 100%, null );
+
   padding: $padding;
   background-color: $colorBackground;
 

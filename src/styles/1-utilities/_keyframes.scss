@@ -1,0 +1,30 @@
+@keyframes fall
+{
+  0%, 100% { @include translate() }
+  50% { @include translate( $y: 200% ) }
+  50.05% { @include translate( $y: -200% ) }
+}
+
+@keyframes scalein
+{
+  0% { @include scale( 0, 0, 0 ) }
+  100% { @include scale() }
+}
+
+@keyframes scaleout
+{
+  0% { @include scale() }
+  100% { @include scale( 0, 0, 0 ) }
+}
+
+@keyframes fadein
+{
+  0% { opacity: 0 }
+  100% { opacity: 1 }
+}
+
+@keyframes fadeout
+{
+  0% { opacity: 1 }
+  100% { opacity: 0 }
+}

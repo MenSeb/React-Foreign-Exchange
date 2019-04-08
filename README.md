@@ -28,11 +28,10 @@ The idea behind this project was to explore/practice/show the use of an external
 
 ## Todos
 
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
+- [ ] Configure keyboard event to show/test Loading & Error components
+- [ ] Use input type number instead of type text for mobile keyboard
+- [ ] Fix layout while entering amount on a mobile keyboard ( no compression )
+- [ ] Styling HTML select element ( should use a custom semantic select )
 
 ## Scripts
 

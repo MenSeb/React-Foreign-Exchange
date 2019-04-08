@@ -1,0 +1,19 @@
+#ForeignData
+{
+  @include flex-parent( $d: column, $jc: space-around, $ai: center );
+
+  .currencies
+  {
+    @include flex-parent( $jc: space-between );
+
+    select
+    {
+      @extend %flex-center;
+    }
+
+    section
+    {
+      @include size( calc( 50% - #{ $padding } ), null );
+    }
+  }
+}

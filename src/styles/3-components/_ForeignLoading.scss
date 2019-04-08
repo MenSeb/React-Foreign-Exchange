@@ -15,6 +15,11 @@
   {
     @include size( $sizeDollar );
     z-index: 1;
+
+    img
+    {
+      @extend %full-size;
+    }
   }
 
   .slot
@@ -31,6 +36,7 @@
       content: '';
       display: block;
       position: absolute;
+      box-sizing: content-box;
       border: $sizeSlot solid $colorBorder;
     }
 

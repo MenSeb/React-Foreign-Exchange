@@ -26,12 +26,12 @@
   flex-wrap: $w;
 }
 
-@mixin transition ( $props )
+@mixin transition ( $props... )
 {
   transition-property: $props;
 }
 
-@mixin animation ( $names )
+@mixin animation ( $names... )
 {
   animation-name: $names;
 }

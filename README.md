@@ -22,9 +22,9 @@ The idea behind this project was to explore/practice/show the use of an external
 
 ## Features
 
-- Loading
 - Error
 - Exchange
+- Loading
 
 ## Todos
 

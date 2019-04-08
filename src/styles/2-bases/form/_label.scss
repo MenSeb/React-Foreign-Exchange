@@ -1,6 +1,6 @@
 label
 {
-  @extend %flex-center;
+  @extend %flex-center, %transition;
   @include size( 100%, null );
   @include transition( color, border-color, background-color );
 

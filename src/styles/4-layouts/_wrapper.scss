@@ -1,0 +1,7 @@
+.wrapper
+{
+  @extend %full-size, %flex-center;
+  @include max-size( $sizeWidthWrapper, $sizeHeightWrapper );
+
+  position: relative;
+}

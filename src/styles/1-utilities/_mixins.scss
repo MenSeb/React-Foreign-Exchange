@@ -35,3 +35,13 @@
 {
   animation-name: $names;
 }
+
+@mixin translate ( $x: 0, $y: 0, $z: 0 )
+{
+  transform: translate3d( $x, $y, $z );
+}
+
+@mixin scale ( $x: 1, $y: 1, $z: 1 )
+{
+  transform: scale3d( $x, $y, $z );
+}

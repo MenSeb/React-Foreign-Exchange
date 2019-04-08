@@ -1,0 +1,8 @@
+.App
+{
+  @extend %full-size, %flex-center;
+
+  background-color: $colorBackground;
+  overflow: hidden;
+  padding: $padding;
+}

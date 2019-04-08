@@ -1,8 +1,7 @@
 label
 {
-  @extend %flex-center, %transition;
+  @extend %flex-center;
   @include size( 100%, null );
-  @include transition( color, border-color, background-color );
 
   cursor: pointer;
   font-weight: bold;

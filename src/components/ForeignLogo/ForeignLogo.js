@@ -6,7 +6,6 @@ export default function ForeignLogo ( props )
     <img
       { ...props }
       src='logo.svg'
-      className='ForeignLogo'
       alt='Foreign Exchange Logo'
     />
   )

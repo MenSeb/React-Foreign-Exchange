@@ -1,0 +1,15 @@
+.layout
+{
+  @extend %full-size;
+
+  .title
+  {
+    @extend %flex-center;
+    @include size( 100%, 15% );
+
+    & + *
+    {
+      @include size( 100%, 85% );
+    }
+  }
+}

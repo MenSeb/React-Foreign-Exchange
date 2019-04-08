@@ -1,0 +1,54 @@
+#ForeignLoading
+{
+  @include flex-parent( $d: column, $jc: space-evenly, $ai: center );
+
+  .loader
+  {
+    @extend %flex-center;
+    @include size( $sizeLoader );
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .dollar
+  {
+    @include size( $sizeDollar );
+    z-index: 1;
+  }
+
+  .slot
+  {
+    @include size( 100%, 3 * $sizeSlot );
+
+    position: absolute;
+
+    &::before,
+    &::after
+    {
+      @include size( calc( 100% - 2 * #{ $sizeSlot } ), $sizeSlot );
+
+      content: '';
+      display: block;
+      position: absolute;
+      border: $sizeSlot solid $colorBorder;
+    }
+
+    &::before { z-index: 0 }
+    &::after { z-index: 2 }
+
+    &:first-child
+    {
+      top: 0;
+
+      &::after { border-bottom-color: transparent }
+    }
+
+    &:last-child
+    {
+      bottom: 0;
+
+      &::after { border-top-color: transparent }
+    }
+  }
+}

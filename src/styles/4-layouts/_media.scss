@@ -1,0 +1,27 @@
+@media screen and ( min-width: 500px )
+{
+  label
+  {
+    padding-left: $paddingTwice;
+
+    > *
+    {
+      margin-left: $paddingTwice;
+    }
+  }
+
+  fieldset
+  {
+    padding-left: $paddingTwice;
+    padding-right: $paddingTwice;
+  }
+}
+
+@media screen and ( min-height: 600px )
+{
+  fieldset
+  {
+    padding-top: $paddingTwice;
+    padding-bottom: $paddingTwice;
+  }
+}
